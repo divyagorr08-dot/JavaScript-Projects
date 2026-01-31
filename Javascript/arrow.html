@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="'en">
+
+<head>
+    <meta charset="utf-8">
+    
+    
+
+</head>
+<body>
+<p id="arrow" onclick="arrow_function()"></p>
+<p id="ages" onclick="age_function()">Click</p>
+<script>
+    var car;
+    car = (val)=>"This is an arrow function for cars: " + val;
+    document.getElementById('arrow').innerHTML = car("Honda , Ford and Nissan" )
+
+    var ages = [27, 57, 30, 2, 6, 57,35, 45]
+
+    checkAge = (age) => age>=18
+
+    function age_function(){
+        document.getElementById('ages').innerHTML = ages.some(checkAge);
+    }
+
+
+</script>
+</body>
+
+
+
+</html>
