@@ -47,3 +47,32 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+//fade-out challenge
+
+ document.body.classList.add('fade-out');
+
+ window.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.remove('fade-out');
+});
+
+//Form validation
+
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+// PopupForm
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
